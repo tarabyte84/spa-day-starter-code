@@ -16,9 +16,13 @@
 <div id = "servicesMenu">
     <h2>Menu of Available Services</h2>
     <h3>Facial Treatments</h3>
-    <th:block th:each = "item : ${appropriateFacials}">
-        <th:text = "${item.name}"></h3>
+    <table>
+    <th:block th:each = "facial : ${appropriateFacials}">
+        <tr>
+            <td th:text="${facial}"></td>
+        </tr>
     </th:block>
+    </table>
 </div>
 </body>
 </html>
